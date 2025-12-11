@@ -1,0 +1,20 @@
+<div class="movie-card" data-id="<%= movie.id %>">
+    <div class="card-poster">
+        <img src="<%= movie.poster %>" alt="<%= movie.title %>">
+        <div class="card-overlay">
+            <div class="card-rating">
+                <i class="fas fa-star"></i> <%= movie.rating %>
+            </div>
+            <div class="card-year"><%= movie.year %></div>
+        </div>
+    </div>
+    <div class="card-info">
+        <h3 class="card-title"><%= movie.title %></h3>
+        <div class="card-genres">
+            <% movie.genres.forEach(genre => { %>
+                <span class="genre-tag"><%= genre %></span>
+            <% }) %>
+        </div>
+        <p class="card-description"><%= movie.description %></p>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="slideshow">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="movies-section">
+        <div class="container">
+            <h2 class="section-title">Featured Movies</h2>
+            <div class="movies-grid">
+                <% movies.forEach((movie, index) => { %>
+                <%- include('partials/card', {movie}) %>
+                <% }) %>
+            </div>
+
+            <div class="pagination">
+                <% if (currentPage > 1) { %>
+                <a href="?page=<%= currentPage - 1 %>"
+                    class="pagination-btn prev"><i
+                        class="fas fa-chevron-left"></i></a>
+                <% } %>
+
+                <% for (let i = 1; i <= totalPages; i++) { %>
+                <% if (i === currentPage) { %>
+                <span class="pagination-btn active"><%= i %></span>
+                <% } else { %>
+                <a href="?page=<%= i %>" class="pagination-btn"><%= i %></a>
+                <% } %>
+                <% } %>
+
+                <% if (currentPage < totalPages) { %>
+                <a href="?page=<%= currentPage + 1 %>"
+                    class="pagination-btn next"><i
+                        class="fas fa-chevron-right"></i></a>
+                <% } %>
+            </div>
+        </div>
+    </section>
+</main>
+
+<%- include('partials/footer') %>
