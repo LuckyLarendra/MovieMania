@@ -17,11 +17,24 @@ MovieMania is a demo website where users can explore movie content in an engagin
 - Clean and responsive design.
 - Demo-ready project structure to help learn full-stack development concepts.
 
+
+<img width="1911" height="989" alt="Screenshot 2025-12-11 123051" src="https://github.com/user-attachments/assets/82cc43a7-2cd1-4516-ba52-1f81a08f06d7" />
+
+
+<img width="1918" height="991" alt="Screenshot 2025-12-11 123213" src="https://github.com/user-attachments/assets/cbe561ee-ff29-4b02-a381-27950c266e55" />
+
+
+<img width="1918" height="990" alt="Screenshot 2025-12-11 123322" src="https://github.com/user-attachments/assets/b6f570e8-dae0-4210-83bd-8c613060b9c9" />
+
+
+<img width="1919" height="990" alt="Screenshot 2025-12-11 123355" src="https://github.com/user-attachments/assets/d7f60481-40d6-40f7-a71d-a38d74810ee1" />
+
+
 ## Installation & Usage
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/moviemania.git
-
+   git clone https://github.com/LuckyLarendra/MovieMania.git
+   
 
 2. Install dependencies:
    ```bash
